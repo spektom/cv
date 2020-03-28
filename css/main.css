@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@media print {
+  .pagebreak { page-break-before: always; }
+}
+
+html { font-family: 'Source Sans Pro', sans-serif; }
+
+hr {
+  border-top: 1px solid #f1f1f1;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.header { text-align: center; }
+
+.header h1 {
+  margin-bottom: 5px;
+  color: rgb(28,65,143);
+}
+
+.header .links {
+  margin: 0;
+  font-size: 14px;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header { text-align: center; }
+
+.section-header h2 { font-size: 18px; }
+
+.section {
+  display: table;
+  margin: 0 14px 50px;
+}
+
+.section .logo {
+  display: table-cell;
+  width: 110px;
+}
+
+.section .logo img { width: 70px; }
+
+.section .logo img.small { width: 55px; }
+
+.section .descr {
+  display: table-cell;
+  width: 850px;
+  vertical-align: top;
+}
+
+.section .descr .title {
+  color: rgb(28,65,143);
+  font-weight: bold;
+}
+
+.section .descr .company {
+  color: rgb(28,65,143);
+  font-weight: bold;
+}
+
+.section .descr .dates {
+  color: rgb(28,65,143);
+  font-weight: bold;
+  float: right;
+}
+
+.section .descr .text {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.section .descr .text ul { margin: 0; }
+
+.section .descr .text li { list-style-type: disclosure-closed; }
